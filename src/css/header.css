@@ -1,0 +1,52 @@
+/* Styling for the header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.site-header .logo {
+    display: flex;              
+    align-items: center;        
+}
+
+.site-header .logo h1 {
+    margin: 0 5px 0 0;         
+    font-size: 24px;   
+}         
+
+.site-header .logo img {
+    width: 50px;                
+    height: 50px;                
+    margin-left: 10px;    
+    object-fit: contain;      
+}
+.site-header .navbar ul {
+    display: flex;                
+    list-style-type: none;        
+    margin: 0;                    
+    padding: 0;                   
+}
+
+.site-header .navbar ul li {
+    margin-left: 20px;            
+}
+
+.site-header .navbar ul li:first-child {
+    margin-left: 0;   
+}           
+
+.site-header .navbar ul li a {
+    text-decoration: none;        
+    color: #333;                 
+    font-size: 16px;              
+}
+
+.site-header .navbar ul li a:hover {
+    color: #007BFF;                
+}
