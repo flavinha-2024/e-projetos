@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doit-FrontEnd</title>
     <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/sidebar.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,19 +14,27 @@
 </head>
 
 <body>
-    <main>
-        <i></i>
-        <section class="container">
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </aside>
+
+    <div class="container">
+        <div>
             <header>
                 <h2>Buscar Usuário</h2>
                 <input type="text" id="input-search" placeholder="Digite o Nome do Usuário">
                 <input type="button" value="Buscar" id="btn-search">
-
-                <div class="profile-data"></div>
             </header>
-        </section>
-
-    </main>
+            <div class="profile-data"></div>
+        </div>
+    </div>
 
     <script type="module" src="./src/scripts/index.js"></script>
 </body>

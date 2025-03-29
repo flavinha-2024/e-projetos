@@ -7,8 +7,8 @@ function getUserprofile(){
     user().then(userData => {
         let userInfo = ""
         userData.forEach(item => {
-           userInfo += `<img src="avatar" alt="foto do perfil do usuário">
-                            <div class="data">
+           userInfo += ` <div class="data">
+                     <img src="avatar" alt="foto do perfil do usuário">
                                <h1>${item.name}</h1>
                                <p>${item.age}</p>
                             </div>`
