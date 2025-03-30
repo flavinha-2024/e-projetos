@@ -1,0 +1,39 @@
+/* Wrapper for the sidebar and main content */
+.wrapper {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 80px; /* Adjust space for the fixed header */
+    height: calc(100vh - 80px);
+    overflow: hidden; 
+}
+
+/* Sidebar */
+.sidebar {
+    width: 150px; /* Sidebar width */
+    background-color: #f4f4f4;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    border-radius: 5px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #00bcd4; /* Change color on hover */
+}
+
+
