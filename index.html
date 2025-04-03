@@ -12,43 +12,134 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="logo">
-            <h1>Doit</h1>
-            <img src="./src/images/—Pngtree—healthcare_8624505.png" alt="foto do logo">
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="wrapper">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Users</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Profile</a></li>
-            </ul>
-        </aside>
-    <main>
-        <section class="container">
-            <header>
-                <h2>Buscar Usuário</h2>
-                <input type="text" id="input-search" placeholder="Digite o Nome do Usuário">
-                <input type="button" value="Buscar" id="btn-search">
-            </header>
-            <div class="profile-data"></div>
-        </div>
-    </div>
 
+    <header class="site-header" id="header">
+        <div class="header-container">
+            <!-- <h1>Doit</h1> -->
+            <!-- <img src="./src/images/—Pngtree—healthcare_8624505.png" alt="foto do logo"> -->
+            <a href="#" class="header-logo">
+                <i class="ri-hand-heart-fill"></i>
+                <span>Doit</span>
+            </a>
+
+            <button class="header_toggle" id="header-toggle">
+                <i class="ri-menu-line"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-user">
+                <div class="navbar-img">
+                    <img src="./src/images/—Pngtree—healthcare_8624505.png" alt="image">
+                </div>
+
+                <div class="navbar-info">
+                    <h3>healthcare</h3>
+                    <span>taking good care of you</span>
+                </div>
+            </div>
+
+            <div class="navbar-content">
+                <div>
+                    <h3 class="navbar-title">MANAGE</h3>
+
+                    <div class="navbar-list">
+                        <a href="#" class="navbar-link">
+                            <i class="ri-dashboard-fill"></i>
+                            <span>Dashboard</span>
+                        </a>
+
+                        <a href="#" class="navbar-link">
+                            <i class="ri-group-fill"></i>
+                            <span>Users</span>
+                        </a>
+
+                        <a href="#" class="navbar-link">
+                            <i class="ri-settings-2-fill"></i>
+                            <span>Settings</span>
+                        </a>
+
+                        <a href="#" class="navbar-link">
+                            <i class="ri-profile-fill"></i>
+                            <span>Profile</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h3 class="navbar-title">MENU</h3>
+
+                    <div class="navbar-list">
+                        <a href="#home" class="navbar-link">
+                            <i class="ri-home-2-fill"></i>
+                            <span>Home</span>
+                        </a>
+
+                        <a href="#about" class="navbar-link">
+                            <i class="ri-information-2-fill"></i>
+                            <span>About</span>
+                        </a>
+
+                        <a href="#contact" class="navbar-link">
+                            <i class="ri-contacts-book-upload-fill"></i>
+                            <span>Contact</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-actions">
+
+            </div>
+        </div>
+        <!-- <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul> -->
+    </nav>
+
+
+    <main>
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <!-- <aside class="sidebar">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </aside> -->
+
+            <!-- <section class="container">
+                <header>
+                    <h2>Buscar Usuário</h2>
+                    <input type="text" id="input-search" placeholder="Digite o Nome do Usuário">
+                    <input type="button" value="Buscar" id="btn-search">
+                </header>
+                <div class="profile-data"></div>
+            </section> -->
+        </div>
+    </main>
     <script type="module" src="./src/scripts/index.js"></script>
 </body>
 
