@@ -19,7 +19,7 @@ function getUserprofile(){
         let userInfo = ""
         userData.forEach(item => {
            userInfo += `<div class="data">
-                     <img src="avatar" alt="foto do perfil do usuário">
+                     <img src="avatar" alt="foto do perfil">
                                <h1>${item.name}</h1>
                                <p>${item.age}</p>
                             </div>`
