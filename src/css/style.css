@@ -1,11 +1,13 @@
 body{
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .users{
+  width: 80%;
+  height: 500px;
   display: flex;
-  margin: 60px;
+  margin: 50px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;;
   border-radius: 30px;
 }
@@ -14,9 +16,11 @@ body{
   display: flex;
   flex-direction: column;
   gap: 50px;
-  width: 50%;
-  margin: 20px;
+  width: 100%;
+  margin: 30px;
   /* height: 50%; */
+  overflow: auto;
+  overflow-y: scroll;
 }
 
 .users .profile-data .data{
