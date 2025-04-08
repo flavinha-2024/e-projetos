@@ -14,23 +14,26 @@
 }
 
 .navigation.active{
-    width: 10px;
+    width: 80px;
 }
 
 .navigation .logo{
     display: flex;
     align-items: center;
+    margin: 40px 5px  5px;
+
 }
 
 .navigation img{
     width: 50px;
-    margin: 30px;
+    margin: 5px;
     border: 1px solid #000;
     border-radius: 50%;
     background-color: var(--white);
 }
 
 .navigation h1{
+    margin: 20px;
     font-size: 20px;
     text-transform: capitalize;
 }
@@ -54,7 +57,7 @@
 }
 
 .navigation ul li:nth-child(1){
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     pointer-events: none;
 }
 
@@ -62,12 +65,14 @@
     position: relative;
     display: block;
     width: 100%;
+    /* height: 48px; */
     display: flex;
     color: var(--white);
 }
 
 .navigation ul li:hover a{
     color: var(--blue);
+    
 }
 
 .navigation ul li a .icon{
@@ -77,6 +82,7 @@
     height: 60px;
     line-height: 60px;
     text-align: center;
+    
 }
 
 .navigation ul li a .icon i{
@@ -86,6 +92,7 @@
 .navigation ul li a .title{
     position: relative;
     display: block;
+    padding: 0 10px;
     height: 60px;
     line-height: 60px;
     text-align: start;
