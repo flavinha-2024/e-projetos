@@ -11,6 +11,8 @@ toggle.onclick = function () {
 
 async function user() {
     const response = await fetch('https://doit-production.up.railway.app/person');
+    // console.log(await response.json());
+    
     return await response.json()
 }
 
@@ -19,13 +21,25 @@ function getUserprofile() {
         let userInfo = ""
         userData.forEach(item => {
             userInfo += `<div class="data">
-                            <img src="" alt="foto do perfil"/>
-                               <h1>${item.name}</h1>
-                               <p>${item.age}</p>
-                            </div>`
+                            <img src="${item.
+                                imageUrl}" alt="foto do perfil"/>
+                        
+                        
+                             
+                     <ul> 
+                         <li class="title">${item.name}</li>
+                         <li>${item.
+                            bloodType
+                            }</li>
+                         <li>${item.height}</li>
+                         <li>${item.smokingStatus
+                         }</li>
+                       </ul>
+                       </div>`
+            
         })
 
-        document.querySelector('.profile-data').innerHTML = userInfo
+        document.querySelector('.profile-data').innerHTML += userInfo
 
     })
 }
