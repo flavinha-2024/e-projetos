@@ -10,7 +10,7 @@ toggle.onclick = function () {
 
 
 async function user() {
-    const response = await fetch('https://doit-production.up.railway.app/person');
+    const response = await fetch('https://doit-backend-4lzz.onrender.com/person');
     // console.log(await response.json());
     
     return await response.json()
